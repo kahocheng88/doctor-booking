@@ -35,6 +35,10 @@ class ConfigProvider
         return [
             'invokables' => [
                 Action\PingAction::class => Action\PingAction::class,
+                Action\BookingAction::class => Action\BookingAction::class,
+                Action\CreateBookingAction::class => Action\CreateBookingAction::class,
+                Action\ModifyBookingAction::class => Action\ModifyBookingAction::class,
+                Action\DeleteBookingAction::class => Action\DeleteBookingAction::class,
             ],
             'factories'  => [
                 Action\HomePageAction::class => Action\HomePageFactory::class,

@@ -30,3 +30,8 @@
 
 $app->get('/', App\Action\HomePageAction::class, 'home');
 $app->get('/api/ping', App\Action\PingAction::class, 'api.ping');
+
+$app->get('/api/booking', App\Booking\BookingHandler::class, 'api.booking');
+$app->post('/api/booking', App\Booking\CreateBookingHandler::class, 'api.booking.create');
+$app->put('/api/booking', App\Booking\ModifyBookingHandler::class, 'api.booking.put');
+$app->delete('/api/booking', App\Booking\DeleteBookingHandler::class, 'api.booking.delete');
