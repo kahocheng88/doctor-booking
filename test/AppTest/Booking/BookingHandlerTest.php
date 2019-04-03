@@ -2,13 +2,13 @@
 
 namespace AppTest\Action;
 
-use App\Booking\BookHandler;
+use App\Booking\BookingHandler;
 use Interop\Http\ServerMiddleware\DelegateInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response\JsonResponse;
 
-class PingActionTest extends TestCase
+class BookingHandlerTest extends TestCase
 {
     // public function testResponse()
     // {
@@ -24,7 +24,13 @@ class PingActionTest extends TestCase
     //     $this->assertTrue(isset($json->ack));
     // }
 
-    public function test() {
+    public function testGetById() {
+        $bookingHandler = new BookingHandler();
+        $this->assertTrue(true);
+    }
+
+    public function testGetByUserName() {
+        $bookingHandler = new BookingHandler();
         $this->assertTrue(true);
     }
 }
